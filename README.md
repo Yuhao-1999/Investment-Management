@@ -28,3 +28,4 @@ Requirements.
 8.As a user I want to be able to see the recommended investment offers feed, so that I can decide fast based on the deals.
 9.As a user I want to be able to see the guide about investment provided by the app, so that I have an insight about what the app offers.
 
+
