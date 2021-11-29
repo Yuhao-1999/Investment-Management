@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">Investment management</string>
     <string name="password">Password</string>
-    <string name="enter_password">enter password</string>
+    <string name="enter_password">Enter password</string>
     <string name="email">Email</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="initial_budget">Initial Budget</string>
     <string name="example_example_com">example@example.com</string>
     <string name="log_in">Log In</string>
     <string name="hyperlink_to_create">Create account</string>
-    <string name="log_in">Log In</string>
+    <string name="sign_upTitle">Sign Up</string>
     <string name="new_to_investment_manager">New to investment manager?</string>
 </resources>
