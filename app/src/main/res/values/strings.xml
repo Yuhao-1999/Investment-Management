@@ -10,5 +10,8 @@
     <string name="log_in">Log In</string>
     <string name="hyperlink_to_create">Create account</string>
     <string name="sign_upTitle">Sign Up</string>
+    <string name="settingTitle">Setting</string>
+
     <string name="new_to_investment_manager">New to investment manager?</string>
+    <string name="change">Change</string>
 </resources>

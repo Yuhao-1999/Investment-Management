@@ -33,6 +33,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/enter_email"
                 android:layout_width="214dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -64,6 +65,7 @@
             android:layout_gravity="center_vertical">
 
             <TextView
+                android:id="@+id/enter_username"
                 android:layout_width="129dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -93,6 +95,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/enter_password"
                 android:layout_width="214dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -123,6 +126,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/initial_budget"
                 android:layout_width="113dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -152,6 +156,7 @@
 
 
             <Button
+                android:id="@+id/sign_upButton"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
@@ -170,6 +175,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/already"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -184,6 +190,7 @@
             </TextView>
 
             <Button
+                android:id="@+id/log_inButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
