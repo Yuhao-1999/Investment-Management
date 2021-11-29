@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable/edittextborder.xml" value="0.321025641025641" />
-        <entry key="app/src/main/res/layout/editwithborder.xml" value="0.15070921985815602" />
-        <entry key="app/src/main/res/layout/login.xml" value="0.33" />
+        <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/login.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/setting.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/sign_up.xml" value="0.3560830860534125" />
         <entry key="app/src/main/res/layout/login_signup.xml" value="0.15070921985815602" />
       </map>
     </option>
