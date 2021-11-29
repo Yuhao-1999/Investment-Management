@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/edittextborder.xml" value="0.321025641025641" />
+        <entry key="app/src/main/res/layout/editwithborder.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/login_signup.xml" value="0.15070921985815602" />
       </map>
     </option>
