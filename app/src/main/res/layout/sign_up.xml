@@ -48,7 +48,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress"
+                android:id="@+id/editEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
@@ -81,7 +81,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editUsername"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
@@ -113,7 +113,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/editPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
@@ -145,7 +145,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/editNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
