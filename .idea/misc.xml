@@ -10,7 +10,10 @@
         <entry key="app/src/main/res/layout/fragment_investment.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.22395833333333334" />
         <entry key="app/src/main/res/layout/fragment_transactions.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/guide.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/header_navigation_drawer.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/investment_row.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/investments.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/login.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/navigation_drawer.xml" value="0.1" />
         <entry key="app/src/main/res/layout/navigation_header.xml" value="0.21666666666666667" />
@@ -19,10 +22,6 @@
         <entry key="app/src/main/res/layout/sign_up.xml" value="0.1" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/menu/drawer_view.xml" value="0.23802083333333332" />
-        <entry key="app/src/main/res/drawable/edittextborder.xml" value="0.321025641025641" />
-        <entry key="app/src/main/res/layout/editwithborder.xml" value="0.15070921985815602" />
-        <entry key="app/src/main/res/layout/login.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/login_signup.xml" value="0.15070921985815602" />
       </map>
     </option>
   </component>
