@@ -14,4 +14,10 @@
 
     <string name="new_to_investment_manager">New to investment manager?</string>
     <string name="change">Change</string>
+    <string name="navHeaderSecondaryText">An investment platform</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
