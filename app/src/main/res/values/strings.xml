@@ -11,12 +11,13 @@
     <string name="hyperlink_to_create">Create account</string>
     <string name="sign_upTitle">Sign Up</string>
     <string name="settingTitle">Setting</string>
-    <string name="guide">GUIDE</string>
-    <string name="title">Title</string>
-    <string name="textview">TextView</string>
 
     <string name="new_to_investment_manager">New to investment manager?</string>
     <string name="change">Change</string>
-    <string name="title">Title</string>
-    <string name="title">Title</string>
+    <string name="navHeaderSecondaryText">An investment platform</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
