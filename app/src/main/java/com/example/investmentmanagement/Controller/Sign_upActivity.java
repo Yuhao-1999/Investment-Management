@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.investmentmanagement.MainActivity;
 import com.example.investmentmanagement.R;
 
 public class Sign_upActivity extends AppCompatActivity{
@@ -21,7 +20,6 @@ public class Sign_upActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
-
         sign_upTitle = (TextView) findViewById(R.id.sign_upTitle);
         enter_email= (TextView) findViewById(R.id.enter_email);
         enter_username= (TextView) findViewById(R.id.enter_username);

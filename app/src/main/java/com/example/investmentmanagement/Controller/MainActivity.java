@@ -1,4 +1,4 @@
-package com.example.investmentmanagement;
+package com.example.investmentmanagement.Controller;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.investmentmanagement.Controller.Sign_upActivity;
+import com.example.investmentmanagement.R;
 
 public class MainActivity extends AppCompatActivity{
 TextView textView,textView2,textView3,textView4;
@@ -34,7 +34,7 @@ private Button button,button2;
         button2.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent= new Intent(MainActivity.this,Sign_upActivity.class);
+            Intent intent= new Intent(getApplicationContext(),Sign_upActivity.class);
             startActivity(intent);
 
         }

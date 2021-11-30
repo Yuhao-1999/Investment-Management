@@ -10,13 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InvestmentManagement">
         <activity
-            android:name=".MainActivity"
+            android:name=".Controller.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Controller.Sign_upActivity"
+            android:exported="true">
         </activity>
         <meta-data
             android:name="preloaded_fonts"
