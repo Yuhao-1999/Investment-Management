@@ -3,10 +3,18 @@ package com.example.investmentmanagement;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.investmentmanagement.Models.Investment;
+import com.example.investmentmanagement.Views.InvestmentAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,7 +22,7 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class InvestmentFragment extends Fragment {
-
+    RecyclerView rv;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -59,6 +67,40 @@ public class InvestmentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_investment, container, false);
+
+        View view=inflater.inflate(R.layout.fragment_investment, container, false);
+
+        rv = view.findViewById(R.id.rv);
+        rv.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        rv.hasFixedSize();
+        List<Investment> investmentList = new ArrayList<>();
+        investmentList.add(new Investment("GIMME MONEY",
+                "Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+                5000,
+                90,
+                1,
+                50,
+                "Technology",
+                "ABC"));
+        investmentList.add(new Investment("GIMME MONEY",
+                "Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+                5000,
+                90,
+                2,
+                50,
+                "Technology",
+                "CDE"));
+        investmentList.add(new Investment("GIMME MONEY",
+                "Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+                5000,
+                90,
+                3,
+                50,
+                "Technology",
+                "DEF"));
+
+        InvestmentAdapter adapter = new InvestmentAdapter(investmentList);
+        rv.setAdapter(adapter);
+        return view;
     }
 }

@@ -8,12 +8,12 @@ public class Investment {
         private int investmentID;
         private int price;
         private String category;
-        private Company company;
+        private String company;
         private boolean isRecommended;
         private boolean isActive;
 
 
-    public Investment(String title, String description, int budget, int periodOfReturn, int investmentID, int price, String category, Company company) {
+    public Investment(String title, String description, int budget, int periodOfReturn, int investmentID, int price, String category, String company) {
         this.title = title;
         this.description = description;
         this.budget = budget;
@@ -80,11 +80,11 @@ public class Investment {
         this.category = category;
     }
 
-    public Company getCompany() {
+    public String getCompany() {
         return company;
     }
 
-    public void setCompany(Company company) {
+    public void setCompany(String company) {
         this.company = company;
     }
 
