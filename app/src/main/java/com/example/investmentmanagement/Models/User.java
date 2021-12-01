@@ -12,11 +12,14 @@ public class User {
         this.password = password;
     }
 
+    public User() {
+    }
+
     public String getUserName() {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public void setUserName(String username) {
         this.userName = userName;
     }
 

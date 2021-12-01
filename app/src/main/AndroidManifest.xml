@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InvestmentManagement">
         <activity
-            android:name=".Controller.MainActivity"
+            android:name=".Views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Controller.Sign_upActivity"
+            android:name=".Views.Sign_upActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Views.MainPage"
             android:exported="true">
         </activity>
         <meta-data
