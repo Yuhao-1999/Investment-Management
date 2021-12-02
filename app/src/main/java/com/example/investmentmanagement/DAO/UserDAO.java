@@ -20,7 +20,7 @@ public class UserDAO {
 
     private UserDAO(){
             FirebaseDatabase database = FirebaseDatabase
-                    .getInstance("https://investment-management-34dfe-default-rtdb.europe-west1.firebasedatabase.app/");
+                    .getInstance();
             reference = database.getReference(User.class.getSimpleName());
 
             reference.addValueEventListener(new ValueEventListener() {
@@ -29,13 +29,13 @@ public class UserDAO {
                     for (DataSnapshot child : snapshot.getChildren()){
                         HashMap<String,String> map = (HashMap<String, String>) child.getValue();
                         User user = new User(map.get("username"),map.get("email"),map.get("password"));
-                        Log.i("USER DAO","ACCOUNT: "+user.toString());
+                        Log.i("USER DAO","USER: "+user.toString());
                     }
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError error) {
-                    Log.w("USER DAO", "Failed to read value.", error.toException());
+                    Log.w("USER DAO", "Failed to read value.");
                 }
             });
     }

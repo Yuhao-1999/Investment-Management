@@ -3,6 +3,7 @@
     <string name="password">Password</string>
     <string name="enter_password">Enter password</string>
     <string name="email">Email</string>
+    <string name="username">Username</string>
     <string name="enter_email">Enter Email</string>
     <string name="enter_username">Enter Username</string>
     <string name="initial_budget">Initial Budget</string>
@@ -10,7 +11,7 @@
     <string name="log_in">Log In</string>
     <string name="hyperlink_to_create">Create account</string>
     <string name="sign_upTitle">Sign Up</string>
-    <string name="settingTitle">Setting</string>
+    <string name="settingTitle">SETTING</string>
     <string name="guide">GUIDE</string>
     <string name="title">Title</string>
     <string name="textview">TextView</string>

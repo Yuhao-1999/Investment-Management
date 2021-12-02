@@ -8,12 +8,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.investmentmanagement.DAO.UserFirebase;
 import com.example.investmentmanagement.Models.User;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.investmentmanagement.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+
+import java.util.HashMap;
 
 public class Sign_upActivity extends AppCompatActivity{
     TextView enter_email,enter_username,enter_password,initial_budget;
@@ -45,6 +51,7 @@ public class Sign_upActivity extends AppCompatActivity{
             public void onClick(View v) {
                 Intent intent= new Intent(Sign_upActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
 
             }
         });
@@ -100,18 +107,35 @@ public class Sign_upActivity extends AppCompatActivity{
                 task -> {
 
                     if ( task.isSuccessful() ) {
+                        try {
                         Toast.makeText(Sign_upActivity.this,
                                 "Account created successfully!",
                                 Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        finish();
 
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            save();
+                            finish();
+
+                    }catch (Exception e){
+                            e.printStackTrace();
+                        }
                     } else {
 
                         Toast.makeText(Sign_upActivity.this, "Error!",
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
+    }
+    private void save(){
+        FirebaseUser mUser= mAuth.getCurrentUser();
+        String uID=mUser.getUid();
+        HashMap<String, Object> userMap = new HashMap<>();
+        userMap.put("email", editEmail.getText().toString());
+        userMap.put("username", editUsername.getText().toString());
+        userMap.put("password", editPassword.getText().toString());
+
+        DatabaseReference userRef = FirebaseConfig.getDatabaseReference().child("users");
+        userRef.push().setValue(userMap);
     }
 
 }
