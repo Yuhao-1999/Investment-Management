@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "345409378534",
+    "firebase_url": "https://investment-74af1-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "investment-74af1",
+    "storage_bucket": "investment-74af1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345409378534:android:90187199f805e59ee04327",
+        "android_client_info": {
+          "package_name": "com.example.investmentmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345409378534-p985j5dp3tfvdogqdqt90eu0o45eb080.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWZW_wGTGVx4SnX5IKewM3xCZObaGnNcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345409378534-p985j5dp3tfvdogqdqt90eu0o45eb080.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

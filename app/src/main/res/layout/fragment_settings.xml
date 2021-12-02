@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginTop="32dp"
+        android:layout_marginLeft="15dp"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="27dp">
@@ -32,7 +32,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
+            android:gravity="left"
             android:fontFamily="@font/montserrat"
             android:text="Profile:"
             android:textColor="@color/blue"
@@ -49,7 +49,7 @@
 
             <TextView
                 android:id="@+id/enter_email"
-                android:layout_width="214dp"
+                android:layout_width="211dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
@@ -67,7 +67,11 @@
                 android:layout_width="327dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -78,7 +82,7 @@
 
             <TextView
                 android:id="@+id/enter_username"
-                android:layout_width="129dp"
+                android:layout_width="121dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
@@ -92,10 +96,14 @@
 
             <TextView
                 android:id="@+id/username"
-                android:layout_width="match_parent"
+                android:layout_width="270dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -107,7 +115,7 @@
 
             <TextView
                 android:id="@+id/enter_password"
-                android:layout_width="214dp"
+                android:layout_width="212dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
@@ -125,7 +133,11 @@
                 android:layout_width="326dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -137,7 +149,7 @@
 
             <TextView
                 android:id="@+id/initial_budget"
-                android:layout_width="113dp"
+                android:layout_width="111dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
@@ -155,7 +167,11 @@
                 android:layout_width="226dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -166,24 +182,17 @@
 
 
             <Button
-                android:id="@+id/changeButton"
+                android:id="@+id/sign_outButton"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:padding="10dp"
-                android:text="@string/change"
+                android:text="@string/sign_out"
                 android:textSize="22sp"></Button>
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="74dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="sign out"
-            android:textSize="10dp" />
 
     </LinearLayout>
 
