@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import com.example.investmentmanagement.GuideFragment;
 import com.example.investmentmanagement.InvestmentFragment;
 import com.example.investmentmanagement.R;
+import com.example.investmentmanagement.SettingsFragment;
 import com.example.investmentmanagement.TransactionsFragment;
 import com.google.android.material.navigation.NavigationView;
 

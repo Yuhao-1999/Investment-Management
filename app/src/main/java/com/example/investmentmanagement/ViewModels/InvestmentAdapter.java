@@ -1,4 +1,4 @@
-package com.example.investmentmanagement.Views;
+package com.example.investmentmanagement.ViewModels;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,6 +44,13 @@ public class InvestmentAdapter extends RecyclerView.Adapter<InvestmentAdapter.Vi
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView item_title;
         TextView description;
+        public TextView getItem_title() {
+            return item_title;
+        }
+
+        public TextView getDescription() {
+            return description;
+        }
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             item_title = itemView.findViewById(R.id.title);

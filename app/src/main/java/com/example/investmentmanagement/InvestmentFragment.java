@@ -10,8 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import com.example.investmentmanagement.Models.Investment;
-import com.example.investmentmanagement.Views.InvestmentAdapter;
+import com.example.investmentmanagement.ViewModels.InvestmentAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +24,7 @@ import java.util.List;
  */
 public class InvestmentFragment extends Fragment {
     RecyclerView rv;
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -70,7 +72,6 @@ public class InvestmentFragment extends Fragment {
         // Inflate the layout for this fragment
 
         View view=inflater.inflate(R.layout.fragment_investment, container, false);
-
         rv = view.findViewById(R.id.rv);
         rv.setLayoutManager(new LinearLayoutManager(view.getContext()));
         rv.hasFixedSize();
@@ -102,6 +103,7 @@ public class InvestmentFragment extends Fragment {
 
         InvestmentAdapter adapter = new InvestmentAdapter(investmentList);
         rv.setAdapter(adapter);
+
         return view;
     }
 }
