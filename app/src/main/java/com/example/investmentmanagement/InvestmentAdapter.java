@@ -1,4 +1,5 @@
-package com.example.investmentmanagement.Views;
+package com.example.investmentmanagement;
+
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.investmentmanagement.Models.Investment;
-import com.example.investmentmanagement.R;
 
 import java.util.List;
 
@@ -25,8 +25,7 @@ public class InvestmentAdapter extends RecyclerView.Adapter<InvestmentAdapter.Vi
     @Override
     public InvestmentAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.investment_item
-                ,parent,false);
+        View view = inflater.inflate(R.layout.investment_item,parent,false);
         return new ViewHolder(view);
     }
 
@@ -51,5 +50,3 @@ public class InvestmentAdapter extends RecyclerView.Adapter<InvestmentAdapter.Vi
         }
     }
 }
-
-

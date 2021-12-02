@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".investment_details"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title_inv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/description_inv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Description" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget(usd)" />
+        <TextView
+            android:id="@+id/budget_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget to display"
+            android:layout_marginLeft="80dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/pOfReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Period of \n Return(Days)"
+            />
+        <TextView
+            android:id="@+id/periodOfReturn_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="period"
+            android:layout_marginLeft="75dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            />
+        <TextView
+            android:id="@+id/price_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price to display"
+            android:layout_marginLeft="125dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            />
+        <TextView
+            android:id="@+id/category_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category to display"
+            android:layout_marginLeft="100dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            />
+        <TextView
+            android:id="@+id/company_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company to display"
+            android:layout_marginLeft="98dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>

@@ -28,7 +28,7 @@ public class UserDAO {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     for (DataSnapshot child : snapshot.getChildren()){
                         HashMap<String,String> map = (HashMap<String, String>) child.getValue();
-                        User user = new User(map.get("username"),map.get("email"),map.get("password"));
+                        User user = new User(map.get("username"),map.get("email"),map.get("password"),map.get("budget"));
                         Log.i("USER DAO","USER: "+user.toString());
                     }
                 }

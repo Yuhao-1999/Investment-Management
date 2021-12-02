@@ -93,6 +93,7 @@ public class Sign_upActivity extends AppCompatActivity{
                 user.setUserName(username);
                 user.setEmail(email);
                 user.setPassword(password);
+                user.setBudget(initialBudget);
                 register(user);
             }
         });
@@ -133,9 +134,10 @@ public class Sign_upActivity extends AppCompatActivity{
         userMap.put("email", editEmail.getText().toString());
         userMap.put("username", editUsername.getText().toString());
         userMap.put("password", editPassword.getText().toString());
+        userMap.put("budget",editNumber.getText().toString());
 
-        DatabaseReference userRef = FirebaseConfig.getDatabaseReference().child("users");
-        userRef.push().setValue(userMap);
+        DatabaseReference userRef = FirebaseConfig.getDatabaseReference().child("users").child(uID);
+        userRef.setValue(userMap);
     }
 
 }
