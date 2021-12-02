@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1049502457553",
+    "firebase_url": "https://investment-management-34dfe-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "investment-management-34dfe",
+    "storage_bucket": "investment-management-34dfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049502457553:android:15bc3ebd3edd5664526ff0",
+        "android_client_info": {
+          "package_name": "com.example.investmentmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049502457553-imp1o7unl40roppqdofbp867j5fi31su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOW_d18PgIWFgQQIJeepK3K15sgaF9nLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049502457553-imp1o7unl40roppqdofbp867j5fi31su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
