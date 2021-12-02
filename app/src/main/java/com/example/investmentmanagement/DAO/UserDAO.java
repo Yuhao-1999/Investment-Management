@@ -35,7 +35,7 @@ public class UserDAO {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError error) {
-                    Log.w("USER DAO", "Failed to read value.", error.toException());
+                    Log.w("USER DAO", "Failed to read value.");
                 }
             });
     }

@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import com.example.investmentmanagement.GuideFragment;
 import com.example.investmentmanagement.InvestmentFragment;
 import com.example.investmentmanagement.R;
-import com.example.investmentmanagement.SettingsFragment;
 import com.example.investmentmanagement.TransactionsFragment;
 import com.google.android.material.navigation.NavigationView;
 
@@ -39,8 +38,8 @@ public class MainPage extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,new InvestmentFragment()).commit();
-        nav.setCheckedItem(R.id.investment_fragment);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new TransactionsFragment()).commit();
+        nav.setCheckedItem(R.id.transactions_fragment);
 
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             Fragment temp;
