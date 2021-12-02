@@ -2,6 +2,7 @@ package com.example.investmentmanagement;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -15,6 +16,8 @@ import android.widget.TextView;
  * create an instance of this fragment.
  */
 public class GuideFragment extends Fragment {
+    private TextView t1,t2;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -56,6 +59,7 @@ public class GuideFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
 
         }
+
     }
 
     @Override
@@ -65,4 +69,6 @@ public class GuideFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_guide, container, false);
         return view;
     }
+
+
 }
