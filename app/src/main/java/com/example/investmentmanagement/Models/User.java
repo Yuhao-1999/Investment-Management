@@ -10,13 +10,14 @@ public class User {
     private String userName;
     private String email;
     private String password;
-    private int budget;
+    private String budget;
     private String id;
 
-    public User(String userName, String email, String password) {
+    public User(String userName, String email, String password,String budget) {
         this.userName = userName;
         this.email = email;
         this.password = password;
+        this.budget = budget;
     }
 
     public User() {
@@ -53,11 +54,11 @@ public class User {
         this.password = password;
     }
 
-    public int getBudget() {
+    public String getBudget() {
         return budget;
     }
 
-    public void setBudget(int budget) {
+    public void setBudget(String budget) {
         this.budget = budget;
     }
 
