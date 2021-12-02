@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/toolbar"
-        app:title="Navigation Drawer"
+        app:title="@string/appbar"
         android:background="@color/purple_500"
         app:titleTextColor="@color/white">
     </androidx.appcompat.widget.Toolbar>

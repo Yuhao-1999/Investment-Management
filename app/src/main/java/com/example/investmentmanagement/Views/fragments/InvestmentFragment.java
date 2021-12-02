@@ -1,4 +1,4 @@
-package com.example.investmentmanagement;
+package com.example.investmentmanagement.Views.fragments;
 
 import android.os.Bundle;
 
@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.investmentmanagement.Models.Investment;
+import com.example.investmentmanagement.R;
 import com.example.investmentmanagement.Views.InvestmentAdapter;
 
 import java.util.ArrayList;
@@ -18,11 +19,11 @@ import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link InvestmentFragment#newInstance} factory method to
+ * Use the {@link InvestmentFragment #newInstance} factory method to
  * create an instance of this fragment.
  */
 public class InvestmentFragment extends Fragment {
-    RecyclerView rv;
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,8 +31,10 @@ public class InvestmentFragment extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String mParam1;
-
     private String mParam2;
+
+    private RecyclerView rv;
+    private List<Investment> investmentList;
 
     public InvestmentFragment() {
         // Required empty public constructor
@@ -43,7 +46,7 @@ public class InvestmentFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment InvestmentFragment.
+     * @return A new instance of fragment GuideFragment.
      */
     // TODO: Rename and change types and number of parameters
     public static InvestmentFragment newInstance(String param1, String param2) {
@@ -55,26 +58,11 @@ public class InvestmentFragment extends Fragment {
         return fragment;
     }
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-
-        View view=inflater.inflate(R.layout.fragment_investment, container, false);
-
-        rv = view.findViewById(R.id.rv);
-        rv.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        rv.hasFixedSize();
-        List<Investment> investmentList = new ArrayList<>();
+       investmentList = new ArrayList<>();
         investmentList.add(new Investment("GIMME MONEY",
                 "Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum",
                 5000,
@@ -99,6 +87,18 @@ public class InvestmentFragment extends Fragment {
                 50,
                 "Technology",
                 "DEF"));
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        View view=inflater.inflate(R.layout.fragment_investment, container, false);
+
+        rv = view.findViewById(R.id.rv);
+        rv.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        rv.hasFixedSize();
 
         InvestmentAdapter adapter = new InvestmentAdapter(investmentList);
         rv.setAdapter(adapter);
