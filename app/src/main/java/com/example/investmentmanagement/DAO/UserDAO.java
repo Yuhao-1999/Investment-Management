@@ -20,7 +20,7 @@ public class UserDAO {
 
     private UserDAO(){
             FirebaseDatabase database = FirebaseDatabase
-                    .getInstance("https://investment-74af1-default-rtdb.europe-west1.firebasedatabase.app/");
+                    .getInstance("https://investment-management-34dfe-default-rtdb.europe-west1.firebasedatabase.app/");
             reference = database.getReference(User.class.getSimpleName());
 
             reference.addValueEventListener(new ValueEventListener() {
