@@ -52,7 +52,6 @@ public class MainPage extends AppCompatActivity {
                         temp=new InvestmentFragment();
 
                         break;
-
                     case R.id.transactions_fragment:
                         temp=new TransactionsFragment();
                         break;
