@@ -11,7 +11,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
         public static DatabaseReference getDatabaseReference() {
             if (databaseReference == null) {
-                databaseReference = FirebaseDatabase.getInstance().getReference();
+                databaseReference = FirebaseDatabase.getInstance("https://investment-management-34dfe-default-rtdb.europe-west1.firebasedatabase.app/").getReference();
             }
             return databaseReference;
         }

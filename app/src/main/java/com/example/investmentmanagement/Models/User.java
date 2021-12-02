@@ -1,10 +1,17 @@
 package com.example.investmentmanagement.Models;
 
+import com.example.investmentmanagement.Views.FirebaseConfig;
+import com.google.firebase.database.DatabaseReference;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class User {
     private String userName;
     private String email;
     private String password;
     private int budget;
+    private String id;
 
     public User(String userName, String email, String password) {
         this.userName = userName;
@@ -15,6 +22,13 @@ public class User {
     public User() {
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
     public String getUserName() {
         return userName;
     }
@@ -46,4 +60,7 @@ public class User {
     public void setBudget(int budget) {
         this.budget = budget;
     }
+
+
 }
+
