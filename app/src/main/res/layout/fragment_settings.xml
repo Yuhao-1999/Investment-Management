@@ -177,10 +177,17 @@
                 android:padding="10dp"
                 android:text="@string/change"
                 android:textSize="22sp">
-
             </Button>
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="sign out"
+            android:textSize="10dp" />
 
     </LinearLayout>
 

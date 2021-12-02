@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.investmentmanagement.Models.Investment;
+import com.example.investmentmanagement.Views.InvestmentAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class InvestmentFragment extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String mParam1;
+
     private String mParam2;
 
     public InvestmentFragment() {
@@ -65,7 +67,10 @@ public class InvestmentFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_investment, container, false);
+        // Inflate the layout for this fragment
+
+        View view=inflater.inflate(R.layout.fragment_investment, container, false);
+
         rv = view.findViewById(R.id.rv);
         rv.setLayoutManager(new LinearLayoutManager(view.getContext()));
         rv.hasFixedSize();
@@ -76,26 +81,27 @@ public class InvestmentFragment extends Fragment {
                 90,
                 1,
                 50,
-                "Technology","1"));
+                "Technology",
+                "ABC"));
         investmentList.add(new Investment("GIMME MONEY",
                 "Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum",
                 5000,
                 90,
                 2,
                 50,
-                "Technology","2"));
+                "Technology",
+                "CDE"));
         investmentList.add(new Investment("GIMME MONEY",
                 "Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum",
                 5000,
                 90,
                 3,
                 50,
-                "Technology","3"));
+                "Technology",
+                "DEF"));
 
         InvestmentAdapter adapter = new InvestmentAdapter(investmentList);
         rv.setAdapter(adapter);
         return view;
-
     }
-
 }
