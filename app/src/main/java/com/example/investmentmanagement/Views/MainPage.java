@@ -12,7 +12,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.investmentmanagement.Views.fragments.GuideFragment;
-import com.example.investmentmanagement.Views.fragments.InvestmentFragment;
+import com.example.investmentmanagement.Views.InvestmentFragment;
 import com.example.investmentmanagement.R;
 import com.example.investmentmanagement.Views.fragments.SettingsFragment;
 import com.example.investmentmanagement.Views.fragments.TransactionsFragment;

@@ -1,8 +1,10 @@
-package com.example.investmentmanagement.Views.fragments;
+package com.example.investmentmanagement.Views;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,6 +16,8 @@ import android.view.ViewGroup;
 import com.example.investmentmanagement.Models.Investment;
 import com.example.investmentmanagement.R;
 import com.example.investmentmanagement.ViewModels.InvestmentAdapter;
+import com.example.investmentmanagement.ViewModels.InvestmentVM;
+import com.example.investmentmanagement.Views.investment_details;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,8 +27,10 @@ import java.util.List;
  * Use the {@link InvestmentFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class InvestmentFragment extends Fragment {
+public class InvestmentFragment extends Fragment implements InvestmentAdapter.OnListItemClickListener {
     RecyclerView rv;
+    ArrayList<Investment> investmentList;
+    InvestmentVM investmentVM;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -65,6 +71,7 @@ public class InvestmentFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -76,35 +83,27 @@ public class InvestmentFragment extends Fragment {
         rv = view.findViewById(R.id.rv);
         rv.setLayoutManager(new LinearLayoutManager(view.getContext()));
         rv.hasFixedSize();
-        List<Investment> investmentList = new ArrayList<>();
-        investmentList.add(new Investment("GIMME MONEY",
-                "Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-                5000,
-                90,
-                1,
-                50,
-                "Technology",
-                "ABC"));
-        investmentList.add(new Investment("GIMME MONEY",
-                "Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-                5000,
-                90,
-                2,
-                50,
-                "Technology",
-                "CDE"));
-        investmentList.add(new Investment("GIMME MONEY",
-                "Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum\n"+"Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-                5000,
-                90,
-                3,
-                50,
-                "Technology",
-                "DEF"));
-
-        InvestmentAdapter adapter = new InvestmentAdapter(investmentList);
+        investmentList = new ArrayList<>();
+        Bundle bundle = new Bundle();
+        int position  = bundle.getInt("position");
+        investmentVM = new ViewModelProvider(this).get(InvestmentVM.class);
+        InvestmentAdapter adapter = new InvestmentAdapter(investmentVM,position,this);
         rv.setAdapter(adapter);
 
         return view;
+    }
+
+    @Override
+    public void onClick(int listClick) {
+        Intent intent= new Intent(getActivity(), investment_details.class);
+        intent.putExtra("1",investmentVM.getInvestmentList().get(listClick).getTitle());
+        intent.putExtra("2",investmentVM.getInvestmentList().get(listClick).getDescription());
+        intent.putExtra("3",investmentVM.getInvestmentList().get(listClick).getBudget());
+        intent.putExtra("4",investmentVM.getInvestmentList().get(listClick).getPeriodOfReturn());
+        intent.putExtra("5",investmentVM.getInvestmentList().get(listClick).getPrice());
+        intent.putExtra("6",investmentVM.getInvestmentList().get(listClick).getCategory());
+        intent.putExtra("7",investmentVM.getInvestmentList().get(listClick).getCompany());
+
+        startActivity(intent);
     }
 }
