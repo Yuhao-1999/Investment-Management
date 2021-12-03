@@ -11,11 +11,12 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.investmentmanagement.GuideFragment;
-import com.example.investmentmanagement.InvestmentFragment;
+import com.example.investmentmanagement.Views.fragments.GuideFragment;
+import com.example.investmentmanagement.Views.fragments.InvestmentFragment;
 import com.example.investmentmanagement.R;
-import com.example.investmentmanagement.SettingsFragment;
-import com.example.investmentmanagement.TransactionsFragment;
+import com.example.investmentmanagement.Views.fragments.SettingsFragment;
+import com.example.investmentmanagement.Views.fragments.TransactionsFragment;
+import com.example.investmentmanagement.Views.fragments.SettingsFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainPage extends AppCompatActivity {

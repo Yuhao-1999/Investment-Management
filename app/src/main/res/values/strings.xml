@@ -44,5 +44,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="sign_out">Sign out</string>
     <string name="hear_from_the_experts">Hear from the experts!!!</string>
+    <string name="appbar">Investment Management</string>
 
 </resources>

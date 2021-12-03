@@ -1,4 +1,4 @@
-package com.example.investmentmanagement;
+package com.example.investmentmanagement.Views.fragments;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 
 import com.example.investmentmanagement.Models.Investment;
+import com.example.investmentmanagement.R;
 import com.example.investmentmanagement.ViewModels.InvestmentAdapter;
 
 import java.util.ArrayList;
