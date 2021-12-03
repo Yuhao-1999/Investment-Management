@@ -29,7 +29,7 @@ public class GuideFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private TextView t1,t2,t3;
+    private TextView t1,t2,t3,t4;
     private Button button;
 
     public GuideFragment() {
@@ -74,6 +74,21 @@ public class GuideFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_guide, container, false);
 
         t3=view.findViewById(R.id.link);
+        t4=view.findViewById(R.id.description);
+        t4.setText("  Why should we invest?\n" +
+                "        Investing creates money for future.It's important for new investors to understand the basic of various types of financial products,including stocks,bonds,certificates of deposit and mutual funds.\n" +
+                "        1. Set Investment Goals\n" +
+                "        2. Invest Early\n" +
+                "        3. Make Investments Automatic\n" +
+                "        4. Look at Your Finances\n" +
+                "        5. Learn About Investing\n" +
+                "        6. Set Up Retirement Accounts\n" +
+                "        7. Be Wary of Commissions\n" +
+                "        8. Diversify Your Investments\n" +
+                "        9. Study Your Portfolio\n" +
+                "        10. Keep Informed\n" +
+                "\n" +
+                "What Else Do You Want to Improve About Yourself?");
         button=view.findViewById(R.id.guideButton);
         t3.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -41,7 +41,7 @@ public class MainPage extends AppCompatActivity {
         toggle.syncState();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new TransactionsFragment()).commit();
-        nav.setCheckedItem(R.id.transactions_fragment);
+        nav.setCheckedItem(R.id.investment_fragment);
 
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             Fragment temp;

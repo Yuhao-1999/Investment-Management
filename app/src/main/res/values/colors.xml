@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#2986cc</color>
     <color name="list_item_bg">#C1CDF4</color>
+    <color name="guide">#F44336</color>
+
 </resources>

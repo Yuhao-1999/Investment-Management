@@ -33,9 +33,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:fontFamily="@font/montserrat"
-            android:text="Profile:"
-            android:textColor="@color/blue"
+            android:fontFamily="@font/salsa"
+            android:text="Your profile:"
+            android:textColor="@color/purple_500"
             android:textSize="30sp"
             android:textStyle="bold">
 
@@ -68,8 +68,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat"
+                android:textStyle="italic"
                 android:gravity="center"
-                android:text="TextView"
+                android:text="abcd@example.com"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -101,7 +102,8 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat"
                 android:gravity="center"
-                android:text="TextView"
+                android:text="your good name"
+                android:textStyle="italic"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -135,7 +137,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat"
                 android:gravity="center"
-                android:text="TextView"
+                android:text="******"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -169,7 +171,8 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat"
                 android:gravity="center"
-                android:text="TextView"
+                android:text="Little more please"
+                android:textStyle="italic"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
