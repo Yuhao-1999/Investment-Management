@@ -23,5 +23,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="sign_out">Sign out</string>
+    <string name="hear_from_the_experts">Hear from the experts!!!</string>
 
 </resources>
