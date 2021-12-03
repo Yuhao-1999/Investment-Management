@@ -3,17 +3,17 @@ package com.example.investmentmanagement.Models;
 public class Investment {
         private String title;
         private String description;
-        private int budget;
-        private int periodOfReturn;
-        private int investmentID;
-        private int price;
+        private String budget;
+        private String periodOfReturn;
+        private String investmentID;
+        private String price;
         private String category;
         private String company;
         private boolean isRecommended;
         private boolean isActive;
 
 
-    public Investment(String title, String description, int budget, int periodOfReturn, int investmentID, int price, String category, String company) {
+    public Investment(String title, String description, String budget, String periodOfReturn, String investmentID, String price, String category, String company) {
         this.title = title;
         this.description = description;
         this.budget = budget;
@@ -40,35 +40,35 @@ public class Investment {
         this.description = description;
     }
 
-    public int getBudget() {
+    public String getBudget() {
         return budget;
     }
 
-    public void setBudget(int budget) {
+    public void setBudget(String budget) {
         this.budget = budget;
     }
 
-    public int getPeriodOfReturn() {
+    public String getPeriodOfReturn() {
         return periodOfReturn;
     }
 
-    public void setPeriodOfReturn(int periodOfReturn) {
+    public void setPeriodOfReturn(String periodOfReturn) {
         this.periodOfReturn = periodOfReturn;
     }
 
-    public int getInvestmentID() {
+    public String getInvestmentID() {
         return investmentID;
     }
 
-    public void setInvestmentID(int investmentID) {
+    public void setInvestmentID(String investmentID) {
         this.investmentID = investmentID;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
@@ -103,4 +103,6 @@ public class Investment {
     public void setActive(boolean active) {
         isActive = active;
     }
+
+
 }

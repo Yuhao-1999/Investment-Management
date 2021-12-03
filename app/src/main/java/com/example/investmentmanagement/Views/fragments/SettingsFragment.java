@@ -131,6 +131,7 @@ public class SettingsFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent= new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
+                onDestroy();
             }
         });
         return view;
