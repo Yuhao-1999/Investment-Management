@@ -9,8 +9,8 @@
         <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/fragment_guide.xml" value="0.176" />
         <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/fragment_investment.xml" value="0.21754385964912282" />
         <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/fragment_settings.xml" value="0.4" />
-        <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/investment_details.xml" value="0.1234375" />
-        <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/investment_item.xml" value="0.1" />
+        <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/investment_details.xml" value="0.6" />
+        <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/investment_item.xml" value="0.4" />
         <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/login.xml" value="0.21603260869565216" />
         <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/navigation_drawer.xml" value="0.176" />
         <entry key="..\:/Users/Bruger/AndroidStudioProjects/Investment-Management/app/src/main/res/layout/navigation_header.xml" value="0.264" />
@@ -18,7 +18,7 @@
         <entry key="app/src/main/res/drawable/ic_guide.xml" value="0.2361111111111111" />
         <entry key="app/src/main/res/drawable/ic_settings.xml" value="0.2361111111111111" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
-        <entry key="app/src/main/res/layout/fragment_guide.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_guide.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_investment.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.22395833333333334" />
         <entry key="app/src/main/res/layout/fragment_transactions.xml" value="0.23802083333333332" />
@@ -26,8 +26,8 @@
         <entry key="app/src/main/res/layout/header_navigation_drawer.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/investment_row.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/investments.xml" value="0.23802083333333332" />
-        <entry key="app/src/main/res/layout/login.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/navigation_drawer.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/login.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/navigation_drawer.xml" value="0.1" />
         <entry key="app/src/main/res/layout/navigation_header.xml" value="0.21666666666666667" />
         <entry key="app/src/main/res/layout/navigation_view.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/setting.xml" value="0.23802083333333332" />
