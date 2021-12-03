@@ -31,3 +31,5 @@ It is a problem for newbie investors to choose where to invest, since they are n
 - [x] As a user I want to be able to see the guide about investment provided by the app, so that I have an insight about what the app offers.
 
 
+Youtube : https://youtu.be/fnMyZW_dP-Q
+
