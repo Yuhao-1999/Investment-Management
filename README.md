@@ -20,15 +20,15 @@ It is a problem for newbie investors to choose where to invest, since they are n
 ## Requirements
 - [x] As a user I want to be able to see the options of investments, so that I can choose the best fit.
 - [x] As a user I want to be able to indicate my budget for investment, so that I can get only suitable offers.
-- [ ] As a user I want to be able to indicate the period of return of investment, so that I can get only suitable offers.
 - [x] As a user I want to be able to indicate categories of the investment, so that I can get only suitable offers.
-- [ ] As a user I want to be able to filter possibilities by period of return of investment, descending and ascending price, category, organization, capitalization of the company, so that I can find the suitable offers.
 - [x] As a user I want to be able to create an account, so that my operations are private.
 - [x] As a user I want to be able to log in, so that I can use the app.
 - [x] As a user I want to be able to check the profile, so that I can check the account.
-- [ ] As a user I want to be able to check transaction records, so that I can keep track of the current and past investments.
 - [x] As a user I want to be able to see the recommended investment offers feed, so that I can decide fast based on the deals.
 - [x] As a user I want to be able to see the guide about investment provided by the app, so that I have an insight about what the app offers.
+- [ ] As a user I want to be able to indicate the period of return of investment, so that I can get only suitable offers.
+- [ ] As a user I want to be able to check transaction records, so that I can keep track of the current and past investments.
+- [ ]  As a user I want to be able to filter possibilities by period of return of investment, descending and ascending price, category, organization, capitalization of the company, so that I can find the suitable offers.
 
 
 Youtube : https://youtu.be/fnMyZW_dP-Q
